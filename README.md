@@ -1,122 +1,149 @@
-# Loan-Repayment-Prediction-ML
-Loan Approval Prediction uses machine learning to analyze factors like income and credit history, automating and improving the loan approval process. The project ensures accurate, efficient, and user-friendly predictions with a Gradio interface.
+# 💰 Loan Repayment Prediction (Machine Learning)
 
+Loan Approval Prediction uses machine learning to analyze factors like income, credit history, and property area — automating and improving the loan approval process.  
+This project provides **accurate, efficient, and user-friendly loan prediction** using a **Gradio interface**.
 
-## 📖 Overview
-Loan approval prediction is a critical task in the banking and finance industry. This project leverages machine learning to predict whether a loan application will be approved based on features such as applicant income, credit history, loan amount, and more. By automating the decision-making process, this system aims to reduce risks for financial institutions and improve customer satisfaction.
+---
+
+## 📌 Status & Tech Stack
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-orange)
+![Interface](https://img.shields.io/badge/Framework-Gradio-green)
+![License](https://img.shields.io/badge/License-MIT-success)
+
+---
+
+## 📖 Overview  
+Loan approval prediction is a crucial task in the finance world.  
+This system uses **machine learning models** to predict whether a loan should be approved based on 11 borrower-related features.
+
+It helps financial institutions:
+
+- Reduce risk  
+- Make faster decisions  
+- Improve customer experience  
 
 ---
 
 ## 🚀 Features
-- **Machine Learning Models**: Uses multiple algorithms like Random Forest, Logistic Regression, K-Nearest Neighbors, and Neural Networks.
-- **Dynamic Output**: Displays prediction results with color-coded status (e.g., "Approved" in green, "Rejected" in red).
-- **User-Friendly Interface**: Built with Gradio for real-time loan status prediction.
-- **Feature Analysis**: Explores the impact of different features like credit history and income on loan approval.
+✔️ Multiple ML Models (LR, RF, KNN, SVM, ANN)  
+✔️ Real-time prediction with Gradio UI  
+✔️ Clean, beginner-friendly interface  
+✔️ Color-coded prediction output  
+✔️ Full ML pipeline: preprocessing → modeling → evaluation  
 
 ---
 
 ## 🛠️ Technologies Used
-- **Programming Language**: Python
-- **Libraries**:
-  - `pandas`, `numpy`: Data manipulation and preprocessing
-  - `scikit-learn`: Machine learning model development
-  - `gradio`: Building interactive interfaces
-  - `matplotlib`, `seaborn`: Data visualization
+- **Python**
+- **NumPy**, **pandas**
+- **Scikit-Learn**
+- **TensorFlow/Keras** (for ANN)
+- **Matplotlib**, **Seaborn**
+- **Gradio** (for deployment)
 
 ---
 
 ## 📊 Dataset
-- **Description**: The dataset includes key features such as:
-  - Applicant's Income
-  - Coapplicant's Income
-  - Loan Amount
-  - Credit History
-  - Property Area
-- **Source**: (Mention if it’s from Kaggle, UCI, or custom data)
-- **Data Preprocessing**:
-  - Handling missing values
-  - Encoding categorical variables
-  - Balancing classes with SMOTE
+The dataset includes:
+
+- Applicant Income  
+- Coapplicant Income  
+- Loan Amount  
+- Loan Amount Term  
+- Credit History  
+- Property Area  
+- Employment status  
+- Education level  
+- Number of dependents  
+
+> **Source:** Add Kaggle / UCI / or custom data source here.  
+
+### Data Processing Includes:
+- Handling missing values  
+- Encoding categorical variables  
+- Scaling numerical values  
+- Class balancing using **SMOTE**  
 
 ---
 
 ## 🧠 Machine Learning Workflow
-1. **Data Preprocessing**: Cleaning, scaling, and encoding data for optimal model performance.
-2. **Model Training**:
-   - Trains multiple algorithms (e.g., Logistic Regression, Random Forest) and evaluates them using metrics like accuracy, precision, recall, and ROC-AUC.
-3. **Deployment**:
-   - Uses Gradio for an interactive prediction interface.
-4. **Dynamic Output**:
-   - Displays predictions with color-coded text to indicate loan status.
+
+### 1️⃣ Data Preprocessing  
+- Handling missing values  
+- Scaling and encoding  
+- SMOTE oversampling  
+
+### 2️⃣ Model Training  
+Trained and evaluated:
+
+- Logistic Regression  
+- KNN  
+- Support Vector Machine  
+- Random Forest  
+- Decision Tree  
+- Artificial Neural Network  
+
+### 3️⃣ Deployment  
+The best model is deployed through **Gradio**.
+
+### 4️⃣ Dynamic Output  
+- Green = Approved  
+- Red = Rejected  
 
 ---
 
-## 📈 Evaluation Metrics
-- **Accuracy**: Overall correctness of predictions.
-- **Precision**: Reducing false positives (risky loans predicted as safe).
-- **Recall**: Reducing false negatives (safe loans predicted as risky).
-- **ROC-AUC**: Assessing model discrimination between approved and rejected loans.
+## 📈 Model Performance Comparison
+
+| **Model**                | **Accuracy (%)** | **Precision (%)** | **Confusion Matrix**       |
+|--------------------------|------------------|-------------------|-----------------------------|
+| Logistic Regression      | 74.56            | 77.03            | [[52, 34], [9, 74]]        |
+| K-Nearest Neighbors      | 79.29            | 74.94            | [[56, 30], [14, 69]]       |
+| Support Vector Machine   | 74.56            | 77.47            | [[51, 35], [8, 75]]        |
+| Random Forest            | **82.84**        | **85.53**        | [[60, 26], [3, 80]]        |
+| Decision Tree            | 79.88            | 79.09            | [[60, 26], [11, 72]]       |
+| Artificial Neural Network| 77.78            | N/A              | N/A                        |
+
+### 🔬 ANN Summary
+- 10 epochs  
+- Optimizer: **Adam**  
+- Loss: **Binary Crossentropy**  
+- Validation Accuracy: **77.78%**  
+- Test Accuracy: **75.15%**
+
+👉 **Random Forest is the top-performing model.**
 
 ---
 
-## 🔍 Model Performance
-
-## 🔍 Model Performance
-
-The project evaluates multiple machine learning algorithms, including an Artificial Neural Network (ANN), to identify the best-performing model for loan approval prediction. Below are the performance metrics for each algorithm:
-
-| **Model Name**            | **Accuracy (%)** | **Precision (%)** | **Confusion Matrix**        |
-|---------------------------|------------------|-------------------|-----------------------------|
-| Logistic Regression       | 74.56           | 77.03            | [[52, 34], [9, 74]]        |
-| K-Nearest Neighbors       | 79.29           | 74.94            | [[56, 30], [14, 69]]       |
-| Support Vector Machine    | 74.56           | 77.47            | [[51, 35], [8, 75]]        |
-| Random Forest             | 82.84           | 85.53            | [[60, 26], [3, 80]]        |
-| Decision Tree             | 79.88           | 79.09            | [[60, 26], [11, 72]]       |
-| Artificial Neural Network | 77.78           | N/A              | N/A                        |
-
-### Artificial Neural Network (ANN) Training Summary:
-- **Training Process**:
-  - Trained over 10 epochs using the Adam optimizer and binary cross-entropy loss function.
-  - Showed gradual improvement in accuracy and reduction in loss during training and validation.
-- **Performance Metrics**:
-  - **Training Accuracy**: 77.06%
-  - **Validation Accuracy**: 77.78%
-  - **Test Accuracy**: 75.15%
-
-### Key Observations:
-- **Random Forest** achieves the highest accuracy (82.84%) and precision (85.53%), making it the most reliable model for this dataset.
-- **K-Nearest Neighbors** and **Decision Tree** also perform well, with accuracy scores of 79.29% and 79.88%, respectively.
-- **Artificial Neural Network** demonstrates competitive performance, showing the potential for further optimization with additional hyperparameter tuning or dataset expansion.
-
-
-
----
 ## 🖥️ Getting Started
-### Prerequisites
-- Python 3.7+
-- Install required libraries:
-  ```bash
-  pip install -r requirements.txt
 
+### ✅ 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/Loan-Repayment-Prediction-ML.git
+cd Loan-Repayment-Prediction-ML
+```
+### ✅ 2. Install Dependencies
+```
+bash
+pip install -r requirements.txt
+```
 
-## 🌟Output Demo
+### ✅ 3. Run the Gradio App
+```
+bash
+python app.py
+```
+### 🌟 Output Demo
+#### 🔍 Prediction Interface
 
+![alt text](image.png)
 
-![Image](https://github.com/user-attachments/assets/c65902bf-906f-4264-9770-aac3f992d379)
+#### 📊 Probability & Analysis
+![alt text](image-1.png)
+### 🤝 Contributing
 
+Contributions are welcome ,  feel free to open issues or submit pull requests.
 
-![Image](https://github.com/user-attachments/assets/816ddce9-8858-4826-872e-723a5d7605f2)
+### 📜 License
 
-
-
----
-
-## 🤝 Contributing
-    Contributions are welcome! Feel free to open issues or submit pull requests.
-
-    
----
-
-## 📜 License
-This project is licensed under the MIT License.
-
+Licensed under the MIT License.
