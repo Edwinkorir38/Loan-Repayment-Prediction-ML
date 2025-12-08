@@ -85,7 +85,7 @@ Trained and evaluated:
 - Artificial Neural Network  
 
 ### 3️⃣ Deployment  
-The best model is deployed through **Gradio**.
+The best model is deployed through **Gradio** and **streamlit**
 
 ### 4️⃣ Dynamic Output  
 - Green = Approved  
@@ -136,10 +136,10 @@ python app.py
 ### 🌟 Output Demo
 #### 🔍 Prediction Interface
 
-![alt text](image.png)
+![alt text](Images/image.png)
 
 #### 📊 Probability & Analysis
-![alt text](image-1.png)
+![alt text](Images/image-1.png)
 ### 🤝 Contributing
 
 Contributions are welcome ,  feel free to open issues or submit pull requests.
@@ -147,3 +147,23 @@ Contributions are welcome ,  feel free to open issues or submit pull requests.
 ### 📜 License
 
 Licensed under the MIT License.
+## Project Structure
+```
+.
+├── Data/
+│   └── loan_dataset.csv
+│
+├── Images/
+│   ├── image-1.png
+│   └── image.png
+│
+├── notebooks/
+│   ├── Gradio.py
+│   └── loan_repayment.ipynb
+│
+├── app.py
+├── requirements.txt
+├── README.md
+└── LICENSE
+
+```
