@@ -1,3 +1,4 @@
+
 # 💰 Loan Repayment Prediction (Machine Learning)
 
 Loan Approval Prediction uses machine learning to analyze factors like income, credit history, and property area — automating and improving the loan approval process.  
@@ -6,11 +7,16 @@ This project provides **accurate, efficient, and user-friendly loan prediction**
 ---
 
 ## 📌 Status & Tech Stack
-![Python](https://img.shields.io/badge/Python-3.8+-blue)
-![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-orange)
-![Interface](https://img.shields.io/badge/Framework-Gradio-green)
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?logo=scikit-learn)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep%20Learning-FF6F00?logo=tensorflow)
+![Gradio](https://img.shields.io/badge/Gradio-ML%20Interface-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?logo=streamlit)
 ![License](https://img.shields.io/badge/License-MIT-success)
-
+![GitHub repo size](https://img.shields.io/github/repo-size/Edwinkorir38/loan-repayment-prediction-ml)
+![GitHub stars](https://img.shields.io/github/stars/Edwinkorir38/loan-repayment-prediction-ml?style=social)
 ---
 
 ## 📖 Overview  
@@ -57,7 +63,7 @@ The dataset includes:
 - Education level  
 - Number of dependents  
 
-> **Source:** Add Kaggle / UCI / or custom data source here.  
+  
 
 ### Data Processing Includes:
 - Handling missing values  
@@ -167,3 +173,7 @@ Licensed under the MIT License.
 └── LICENSE
 
 ```
+## 🌐 Live Demo
+Try the deployed machine learning application here:
+
+[![Streamlit App](https://img.shields.io/badge/Live%20Demo-Streamlit-red?logo=streamlit)](https://loan-repayment-prediction-ml-f9em84ghnnxntz2yrvvcf4.streamlit.app/)
