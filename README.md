@@ -33,7 +33,7 @@ It helps financial institutions:
 - 📉 Reduce credit risk
 - ⚡ Make faster, data-driven decisions
 - 🤝 Improve customer experience
-![images](Images\call-me-fred-Pi5BQOLePtw-unsplash.jpg)
+![images](Images/call-me-fred-Pi5BQOLePtw-unsplash.jpg)
 ---
 
 ## 🚀 Features
