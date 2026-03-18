@@ -1,6 +1,6 @@
 
 # 🏦 Loan Repayment Prediction (Machine Learning)
-![Image](Images\loan_repayment_image.jpg)
+![Image](Images/loan_repayment_image.jpg)
 
 A complete machine learning pipeline that predicts whether a loan applicant is likely to **repay** or **default** on a loan — automating credit risk assessment with accuracy, speed, and fairness in mind.  
 This project delivers **accurate, efficient, and user-friendly loan prediction** through a **Gradio interface** and a live **Streamlit app**.
