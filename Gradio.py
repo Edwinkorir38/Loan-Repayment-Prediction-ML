@@ -1,5 +1,6 @@
 import numpy as np
 import gradio as gr
+import os
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -78,4 +79,4 @@ with gr.Blocks() as demo:  # white theme
     )
 
 # Launch the app
-demo.launch()
+demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
