@@ -1,5 +1,5 @@
 
-# 🏦 Loan Repayment Prediction (Machine Learning)
+#  Loan Repayment Prediction (Machine Learning)
 ![Image](Images/loan_repayment_image.jpg)
 
 A complete machine learning pipeline that predicts whether a loan applicant is likely to **repay** or **default** on a loan — automating credit risk assessment with accuracy, speed, and fairness in mind.  
@@ -7,7 +7,7 @@ This project delivers **accurate, efficient, and user-friendly loan prediction**
 
 ---
 
-## 📌 Status & Tech Stack
+##  Status & Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
@@ -22,7 +22,7 @@ This project delivers **accurate, efficient, and user-friendly loan prediction**
 
 ---
 
-## 📖 Overview
+##  Overview
 
 Access to credit is a critical enabler of economic activity, yet lenders face significant risk when borrowers default on loan obligations. This project presents a complete machine learning pipeline to predict **loan repayment status** — whether an applicant is likely to repay (`Loan Status: Y`) or not (`Loan Status: N`).
 
@@ -30,25 +30,25 @@ The dataset contains **614 loan applications** with **12 features** including de
 
 It helps financial institutions:
 
-- 📉 Reduce credit risk
-- ⚡ Make faster, data-driven decisions
-- 🤝 Improve customer experience
+-  Reduce credit risk
+-  Make faster, data-driven decisions
+-  Improve customer experience
 ![images](Images/call-me-fred-Pi5BQOLePtw-unsplash.jpg)
 ---
 
-## 🚀 Features
+##  Features
 
 ✔️ Multiple ML Models (LR, KNN, SVM, RF, DT, ANN)  
 ✔️ Real-time prediction with Gradio UI  
 ✔️ Clean, beginner-friendly codebase  
-✔️ Color-coded prediction output (✅ Green = Approved, ❌ Red = Rejected)  
+✔️ Color-coded prediction output ( Green = Approved,  Red = Rejected)  
 ✔️ Full ML pipeline: EDA → Preprocessing → Modelling → Evaluation → Deployment  
 ✔️ ROC-AUC curve comparison across all classifiers  
 ✔️ Statistical testing with `scipy.stats`  
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Python 3.8+**
 - **NumPy**, **Pandas** — data handling
@@ -62,7 +62,7 @@ It helps financial institutions:
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 | Feature | Description |
 |---|---|
@@ -89,24 +89,24 @@ It helps financial institutions:
 
 ---
 
-## 🧠 Machine Learning Workflow
+##  Machine Learning Workflow
 
 ```
 Data Loading → EDA → Data Cleaning → Feature Engineering →
 SMOTE Balancing → Modelling → Evaluation → Comparison → Deployment
 ```
 
-### 1️⃣ Exploratory Data Analysis (EDA)
+### 1️ Exploratory Data Analysis (EDA)
 - Distribution plots, count plots, and correlation heatmaps
 - Key finding: ~78% of applicants are graduates; **credit history** is the strongest predictor of repayment
 
-### 2️⃣ Preprocessing
+### 2️ Preprocessing
 - Missing value imputation (mode for categoricals, median for `LoanAmount`)
 - Categorical encoding (Label Encoding)
 - Feature scaling (MinMaxScaler to [0, 1])
 - SMOTE oversampling to balance classes
 
-### 3️⃣ Model Training
+### 3️ Model Training
 Six classifiers were trained and evaluated:
 
 - Linear Regression *(baseline/reference only — unsuitable for classification)*
@@ -117,39 +117,39 @@ Six classifiers were trained and evaluated:
 - Decision Tree (tuned depth)
 - Artificial Neural Network (ANN with Adam optimizer)
 
-### 4️⃣ Evaluation Metrics
+### 4️ Evaluation Metrics
 - Accuracy, Precision, Recall, F1-Score
 - Confusion Matrix
 - ROC-AUC Curves (multi-model comparison)
 
-### 5️⃣ Deployment
+### 5️ Deployment
 Best models deployed via **Gradio** (interactive) and **Streamlit** (web app).
 
 ---
 
-## 📈 Model Performance Comparison
+##  Model Performance Comparison
 
 | **Model** | **Accuracy (%)** | **Notes** |
 |---|---|---|
 | Logistic Regression | 72.19 | Good baseline; moderate precision/recall |
 | K-Nearest Neighbors | 72.78 | Best k tuned across k=1–20 |
 | Support Vector Machine | 71.60 | RBF kernel; competitive precision |
-| **Random Forest** ✅ | **79.88** | **Best overall — 1000 estimators, tuned leaf nodes** |
+| **Random Forest**  | **79.88** | **Best overall — 1000 estimators, tuned leaf nodes** |
 | Decision Tree | 78.70 | Interpretable but prone to overfitting |
 | Artificial Neural Network | 74.56 (test) | 10 epochs, Adam optimizer, Binary Crossentropy |
 
-### 🔬 ANN Training Summary
+###  ANN Training Summary
 - Epochs: **10**
 - Optimizer: **Adam**
 - Loss: **Binary Crossentropy**
 - Final Validation Accuracy: **~79.26%**
 - **Test Accuracy: 74.56%**
 
-> 👉 **Random Forest is the top-performing model** with the highest accuracy (~79.9%) and strong precision (~83.7%), making it the most reliable model for deployment.
+>  **Random Forest is the top-performing model** with the highest accuracy (~79.9%) and strong precision (~83.7%), making it the most reliable model for deployment.
 
 ---
 
-## 🔑 Key Findings & Conclusions
+##  Key Findings & Conclusions
 
 1. **Credit History is the most influential feature.** Applicants with a positive credit history are significantly more likely to repay. This aligns with standard credit risk theory.
 2. **Class imbalance was a critical issue.** SMOTE successfully balanced the ~68/32 class split, preventing biased model predictions.
@@ -161,7 +161,7 @@ Best models deployed via **Gradio** (interactive) and **Streamlit** (web app).
 
 ---
 
-## 💡 Recommendations
+##  Recommendations
 
 1. **Prioritize Credit History in risk scoring.** It is the strongest single signal of repayment likelihood.
 2. **Use Random Forest for production.** Its robustness to outliers and ensemble nature make it ideal for a production loan approval system.
@@ -173,20 +173,20 @@ Best models deployed via **Gradio** (interactive) and **Streamlit** (web app).
 
 ---
 
-## 🖥️ Getting Started
+##  Getting Started
 
-### ✅ 1. Clone the Repository
+###  1. Clone the Repository
 ```bash
 git clone https://github.com/Edwinkorir38/loan-repayment-prediction-ml.git
 cd loan-repayment-prediction-ml
 ```
 
-### ✅ 2. Install Dependencies
+###  2. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### ✅ 3. Run the App
+###  3. Run the App
 
 **Gradio App:**
 ```bash
@@ -200,17 +200,17 @@ python app.py
 
 ---
 
-### 🌟 Output Demo
+###  Output Demo
 
-#### 🔍 Prediction Interface
+####  Prediction Interface
 ![Prediction Interface](Images/image.png)
 
-#### 📊 Probability & Analysis
+####  Probability & Analysis
 ![Probability Analysis](Images/image-1.png)
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 .
@@ -233,7 +233,7 @@ python app.py
 
 ---
 
-## 🌐 Live Demo
+##  Live Demo
 
 Try the deployed applications here:
 
@@ -243,19 +243,19 @@ Try the deployed applications here:
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
 ---
 
-## 📜 License
+##  License
 
 Licensed under the [MIT License](LICENSE).
 
 ---
 
-## 📬 Contact
+##  Contact
 
 For any questions or feedback, feel free to reach out:
 
